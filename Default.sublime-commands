@@ -1,0 +1,18 @@
+[
+    {
+        "caption": "Preferences: Anonymous File Settings",
+        "command": "edit_settings", "args":
+        {
+            "base_file": "${packages}/AnonymousFile/AnonymousFile.sublime-settings",
+            "default": "// Anonymous File Settings - User\n{\n\t$0\n}\n"
+        }
+    },
+    {
+        "caption": "Create Anonymous File",
+        "command": "anonymous_file"
+    },
+    {
+        "caption": "Save Anonymous File",
+        "command": "save_anonymous_file"
+    }
+]

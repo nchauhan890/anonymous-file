@@ -1,0 +1,14 @@
+{
+    // directory to save new anonymous files
+    "dir": "${packages}/AnonymousFile",
+
+    // directory to save recently closed files
+    "recently_closed": "${packages}/AnonymousFile/recently closed",
+
+    // number of recently closed file to keep
+    "keep": 1,
+
+    // create new files with the file extension given
+    // (must include the dot "." - e.g. ".py")
+    "file_extension": ".py"
+}

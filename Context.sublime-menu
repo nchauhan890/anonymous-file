@@ -1,0 +1,16 @@
+[
+    {
+        "caption": "-",
+        "id": "anonymous_file"
+    },
+    {
+        "id": "anonymous_file",
+        "caption": "Create Anonymous File",
+        "command": "anonymous_file"
+    },
+    {
+        "id": "save_anonymous_file",
+        "caption": "Save Anonymous File",
+        "command": "save_anonymous_file"
+    }
+]

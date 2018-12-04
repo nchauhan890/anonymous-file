@@ -1,0 +1,43 @@
+[
+    {
+        "id": "preferences",
+        "children":
+        [
+            {
+                // Include this information in case it is the only package using that menu
+                "caption": "Package Settings",
+                "mnemonic": "P",
+                "id": "package-settings",
+                "children":
+                [
+                    {
+                        "caption": "AnonymousFile",
+                        "id": "anonymousfile",
+                        "children":
+                        [
+                            // README
+                            {
+                                "caption": "README",
+                                "command": "open_file",
+                                "args": {"file": "${packages}/AnonymousFile/README.md"}
+                            },
+                            { "caption": "-"},
+                            // Settings - Default
+                            {
+                                "caption": "Settings – Default",
+                                "command": "open_file",
+                                "args": {"file": "${packages}/AnonymousFile/AnonymousFile.sublime-settings"}
+                            },
+                            // Settings - User
+                            {
+                                "caption": "Settings – User",
+                                "command": "open_file",
+                                "args": {"file": "${packages}/User/AnonymousFile.sublime-settings", "contents": "{\n\t$0\n}"}
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]
