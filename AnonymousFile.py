@@ -21,8 +21,8 @@ def catch_settings_exception(func):
             r = func(*args, **kw)
         except Exception as e:
             sublime.status_message('{} error in '
-                                  'AnonymousFile.sublime-settings:  {}'
-                                  .format(type(e).__name__, e))
+                                   'AnonymousFile.sublime-settings:  {}'
+                                   .format(type(e).__name__, e))
             print('AnonymousFile:', e.__class__.__name__, e)
             raise
             sys.exit(1)
