@@ -25,7 +25,6 @@ def catch_settings_exception(func):
                                    .format(type(e).__name__, e))
             print('AnonymousFile:', e.__class__.__name__, e)
             raise
-            sys.exit(1)
         else:
             return r
     return wrapper
@@ -115,6 +114,7 @@ class AnonymousFileCommand(sublime_plugin.TextCommand):
         file_path = os.path.normpath(dir_) + os.path.sep + file_name
         file = open(file_path, 'x')
         file_names.add(file_name)
+
         print('AnonymousFile: created', file_name)
         print('AnonymousFile: recently closed files:')
         print('\n'.join(recent_file_names))
